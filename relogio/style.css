@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+/* Posicionamento dos números */
+.number-1 { top: 40px; right: 80px; }
+.number-2 { top: 75px; right: 40px; }
+.number-3 { top: 50%; right: 10px; transform: translateY(-50%); }
+.number-4 { bottom: 75px; right: 40px; }
+.number-5 { bottom: 40px; right: 80px; }
+.number-6 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.number-7 { bottom: 40px; left: 80px; }
+.number-8 { bottom: 75px; left: 40px; }
+.number-9 { top: 50%; left: 10px; transform: translateY(-50%); }
+.number-10 { top: 75px; left: 40px; }
+.number-11 { top: 40px; left: 80px; }
+.number-12 { top: 10px; left: 50%; transform: translateX(-50%); }
+
+/* Ponteiros */
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+    height: 6px;
+    width: 35%;
+}
+
+.minute-hand {
+    height: 4px;
+    width: 45%;
+}
+
+.second-hand {
+    height: 2px;
+    width: 48%;
+    background: red;
+}
